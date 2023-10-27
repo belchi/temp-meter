@@ -18,8 +18,8 @@ interface Channel {
     id: number,
     name: string,
     field1: string,
-    "created_at": string,
-    "updated_at": string
+    created_at: string,
+    updated_at: string
 }
 
 interface Feed {
