@@ -33,10 +33,10 @@ interface Items {
     feeds: Feed[]
 }
 
-const endpoint = 'https://api.thingspeak.com/channels/2280057/fields/1.json?results=50';
+const endpoint = 'https://api.thingspeak.com/channels/2280057/fields/1.json';
 
 const formattedDate = (dateInput: string) => {
-    const dateTime = DateTime.fromISO(dateInput, { zone: 'utc' });
+    const dateTime = DateTime.fromISO(dateInput, { zone: 'utc' }).setLocale('sv');
     return dateTime.toFormat('ccc HH:mm');
 
 }
