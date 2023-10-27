@@ -2,9 +2,9 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import {styled} from '@mui/material/styles';
 import {Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow} from "@mui/material";
-import { DateTime } from 'luxon'
+import {DateTime} from 'luxon'
 
-const StyledTableRow = styled(TableRow)(({ theme }) => ({
+const StyledTableRow = styled(TableRow)(({theme}) => ({
     '&:nth-of-type(odd)': {
         backgroundColor: theme.palette.action.hover,
     },
@@ -36,7 +36,7 @@ interface Items {
 const endpoint = 'https://api.thingspeak.com/channels/2280057/fields/1.json';
 
 const formattedDate = (dateInput: string) => {
-    const dateTime = DateTime.fromISO(dateInput, { zone: 'utc' }).setLocale('sv');
+    const dateTime = DateTime.fromISO(dateInput, {zone: 'utc'}).setLocale('sv');
     return dateTime.toFormat('ccc HH:mm');
 
 }
@@ -67,10 +67,7 @@ function App() {
                 </TableHead>
                 <TableBody>
                     {items?.feeds.map((item) => (
-                        <StyledTableRow
-                            key={item.entry_id}
-                            sx={{'&:last-child td, &:last-child th': {border: 0}}}
-                        >
+                        <StyledTableRow key={item.entry_id}>
                             <TableCell>{formattedDate(item.created_at)}</TableCell>
                             <TableCell>{item.field1.replace('.', ',')} °C</TableCell>
                         </StyledTableRow>
@@ -80,4 +77,5 @@ function App() {
         </TableContainer>
     );
 }
+
 export default App;
