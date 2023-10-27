@@ -68,7 +68,8 @@ function App() {
                 <TableBody>
                     {items?.feeds.map((item) => (
                         <StyledTableRow key={item.entry_id}>
-                            <TableCell>{formattedDate(item.created_at)}</TableCell>
+                            <TableCell
+                                style={{textTransform: 'capitalize'}}>{formattedDate(item.created_at)}</TableCell>
                             <TableCell>{item.field1.replace('.', ',')} °C</TableCell>
                         </StyledTableRow>
                     ))}
