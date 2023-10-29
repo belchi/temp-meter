@@ -33,10 +33,10 @@ interface Items {
     feeds: Feed[]
 }
 
-const endpoint = 'https://api.thingspeak.com/channels/2280057/fields/1.json';
+const endpoint = 'https://api.thingspeak.com/channels/2280057/fields/1.json?timezone=Europe%2FStockholm';
 
 const formattedDate = (dateInput: string) => {
-    const dateTime = DateTime.fromISO(dateInput, {zone: 'utc'}).setLocale('sv');
+    const dateTime = DateTime.fromISO(dateInput, {zone: 'Europe/Stockholm'}).setLocale('sv');
     return dateTime.toFormat('ccc HH:mm');
 
 }
