@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/temp-meter/static/css/main.65224693.css",
-    "main.js": "/temp-meter/static/js/main.39fd4a60.js",
+    "main.js": "/temp-meter/static/js/main.d8b9dd8e.js",
     "static/js/787.88e774b7.chunk.js": "/temp-meter/static/js/787.88e774b7.chunk.js",
     "static/media/roboto-latin-500-normal.woff2": "/temp-meter/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/temp-meter/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
@@ -61,11 +61,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/temp-meter/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/temp-meter/index.html",
     "main.65224693.css.map": "/temp-meter/static/css/main.65224693.css.map",
-    "main.39fd4a60.js.map": "/temp-meter/static/js/main.39fd4a60.js.map",
+    "main.d8b9dd8e.js.map": "/temp-meter/static/js/main.d8b9dd8e.js.map",
     "787.88e774b7.chunk.js.map": "/temp-meter/static/js/787.88e774b7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.65224693.css",
-    "static/js/main.39fd4a60.js"
+    "static/js/main.d8b9dd8e.js"
   ]
 }
